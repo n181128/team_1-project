@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="team5Main.css">
+	<link rel="stylesheet" type="text/css" href="image.css">
+	
+</head>
+<body>
+	<div id="team5-div1"><center></center></div>
+	<div id="team5-div2" >
+		<div id="team5-div2_1" style="padding-top: 5px;">
+
+		<p style="font-size: 19.2px; margin-top :0px ;margin-bottom: -7px;">Infosys Limited Recruitment</p>"
+		<p style="font-size:16px;margin-bottom: 4px;">Electronics City, Hosur Road, Bangalore - 560100, India</p>
+		<b style="font-size:19.2px; font-family: serif;">APPLICATION FOR EMPLOYMENT</b><br>
+		<p style= "font-size:16.2px; font-family: serif;">Personal Details</p>
+		</div>
+		<div id="team1-div2_2">
+			<p style="font-size: 17.2px;margin-top: 0px; margin-bottom:-7px;font-family: sans-serif;"><strong>1.GENDER</p></strong>
+			<form style="margin-top: 10px; margin-bottom: -5px;" action="/a.php" onsubmit="return team1_gender();">
+				<input type="radio" name="on"style="margin-top: 10px; margin-bottom: -5px;" id="team1_gender_m"><label>MALE</label><center>
+				<input type="radio" name="on" id="team1_gender_f" style="margin-right: : -50px;"><label>FEMALE</label></center></br>
+				<input type="radio" name="on"style="margin-top: 20px; margin-bottom: -10px;" id="team1_gender_d"><label>I don't want to disclose</label>
+			</form>
+			
+		</div>
+		<div id="team1-div2_3">
+		</div>
+		<div id="team1-div2_4">
+			<p style="font-size: 17.2px;margin-top: 0px; margin-bottom:-7px;font-family: sans-serif;"><strong>2. First name</p></strong>
+			<p style="font-size: 13px;margin-left: 17px;"> As it appears on passport/legal document</p>
+			<p style="color:rgba(169,169,169,0.9); font-size: 13px;margin-left: 17px;">
+Please do not key in any personally identifiable information belonging to you or any other person(s) which is unrelated to the business purpose of this survey</p>
+<h6></h6>
+			
+		</div>
+		<div id="team1-div2_5">
+
+		</div>
+		<div>
+		<div id="team1-div2_6">
+			<p style="font-size: 17.2px;margin-top: 0px; margin-bottom:-7px;font-family: sans-serif;"><strong>
+				5. upload recent passport size color photo
+			</strong>
+			</p>
+			<p style="font-size: 13px;margin-left: 17px;">Please ensure the photograph size is within 512KB</p>
+			<p  style="color:rgba(169,169,169,0.9); font-size: 13px;margin-left: 17px ;">Image file with size upto 5MB</p><button id="Hover"  onclick="return display();">
+		
+			upload image
+				
+			</button>
+			</form>
+		</div>
+
+		</div>
+		
+	</div>
+	<footer>
+		<div id="team5-div4">
+			<b id="progress">0 of 99 answered&nbsp;</b><progress value="0" max="100"></progress>
+			<b id="esTime">Estimated Time:29 mins</b>
+			<input type="submit" id="submit" name="" value="NEXT PAGE">
+		</div>
+	</footer>
+	<div id="div3">
+		<p id="team1_div-3_1" style="margin-left: 50px">Upload and Edit image</p><p style="margin-left: 1000px;"><button> <a herf="" onclick="Close();"> &#10006</a></button></p>
+		
+		<p style="margin-left: 60px;font-size:18px; color: purple;">
+			<button class="team1_div-3_2"style="background-color: white;border-color: white; color:purple; margin-bottom: 10px;" onclick=" return upload_img();">
+			<img src="upload_img.png" style="max-width: 15px" > 
+			Upload An Image
+		</p>
+		</button>
+		<p  id="Accept" style="display: none;">
+			<input type="file" id="filetag" onchange="validation();"> 
+			
+			
+		
+	
+	<div class="team1-div5">
+		<div class="team1-div5_1">
+			<p class="team1-div5_1_1">
+			<h id="team1-div5_1_2">
+			<button style="margin-left: 70px;" onclick=" rotateImgL();"> &#8634</button>
+			 <button  style="margin-left: 30px; width: 50px;"  onclick="rotateImgR();">&#8635</button>
+			<button style="margin-left: 30px; width: 50px;" onclick="rotateImgH();">  &#8644</button>
+			 <button style="margin-left: 30px; width: 50px;"> &#8645</button>
+			 <button style="margin-left: 30px; width: 50px;"> <img src="zoom_in.png" width="20px;"></button>
+		
+			 <button onclick="rotateImg();"> <img src="zoom_in.png" width="20px" style="margin-left: 30px;"></button>
+		</h>
+		</p>
+		</div>
+		<div style="overflow:hidden;">
+	<p><img src="" id="preview" width="500px" style="margin-left: 100px; ">\</p>
+</div>
+		
+	</div>
+	<div class="team1_div-3_3"><p style="display: inline-block;" >
+	<button id="done" onclick="Close();"><b>DONE</b></button></p><p style="display: inline-block;" >
+	<button id="close" onclick="Close(); "><a href="main.html"></a><b>CLOSE</b></button>
+	
+</p>
+	</div>
+	</div>
+	
+
+<script type="text/javascript">
+	//alert(2);
+	function display()
+	{
+	//alert(3);
+		document.getElementById('div3').style.display="block";
+	}
+	function upload_img(){
+		//alert(3);
+		document.getElementById("Accept").style.display="block";
+		//image_size();
+		
+	}
+	function validation(){
+	const fi=document.getElementById("filetag");
+		//alert(fi);
+		//for( const i=0;i<=files.length)
+		if(fi.files.length>0){
+			//alert(fi);
+			for(const i=0;i<=fi.files.length-1;i++){
+				const fsize=fi.files.item(i).size;
+				const file=Math.round((fsize/1024));
+				if(file<=5120){
+					//alert("file sucess");
+					var output = document.getElementById('preview');
+                    output.src = URL.createObjectURL(event.target.files[0]);
+                     output.onload = function() {
+                      URL.revokeObjectURL(preview.src) ;
+                      document.getElementById("team1-div5_1_2").style.display="block";
+				}
+				if(file>5120){
+					alert("make sure that file imge is 5mb");
+				}
+
+			}
+			
+		}
+	}
+}
+function close(){
+	document.getElementById("div3").style.display="none";
+}
+function Close(){
+	document.getElementById("div3").style.display="none";
+}
+var i=0;
+function rotateImgL(){
+	i += 90; // add 90 degrees, you can change this as you want
+      if ( i=== 360) { 
+        // 360 means rotate back to 0
+        i = 0;
+      }
+      document.querySelector("#preview").style.transform = `rotate(${i}deg)`;
+}
+function rotateImgR(){
+	i += 90; // add 90 degrees, you can change this as you want
+      if ( i=== 360) { 
+        // 360 means rotate back to 0
+        i = 0;
+      }
+      document.querySelector("#preview").style.transform = `rotate(${-i}deg)`;
+}
+function rotateImgH(){
+	document.querySelector("#preview").style.transform="scaleX(-1,1);"
+}
+// function rotateImgL(){
+// 	var c;
+// 	}
+// 	if(c==0){
+// 		var a=0;
+		
+// 		document.querySelector("#preview").style.transform = "rotate(90deg)";
+// 		a=90;
+// 		return false;
+// 	}
+// 	if(c== 90){
+// 		document.querySelector("#preview").style.transform = "rotate(180deg)";
+// 		c=180;
+// 		return false;
+// 	}
+// 	if(c== 180){
+// 		document.querySelector("#preview").style.transform = "scaleX(-1)";
+// 		c=270;
+// 		return false;
+// 	}
+
+// }
+// // 	function rotateImgR(){
+// // 	document.querySelector("#preview").style.transform = "rotate(-90deg)";
+// // }
+// // 	function rotateImgH(){
+// // 	document.querySelector("#preview").style.transform = "rotate(180deg)";
+// // }	function rotateImgV(){
+// // 	document.querySelector("#preview").style.transform = "rotate(-180deg)";
+// // }
+	
+	
+// // 		alert("kgfkj");
+// // 	var fileTag = document.getElementById("filetag"),
+// //     preview = document.getElementById("preview");
+// //     const fi=document.getElementById("filetag");
+// // if(fi.files.length>0){
+// // 	alert("if");
+// 	const fsize=fi.files.item(0).size;
+// 	const file=Math.round((fsize/1024));
+// 	if(file<=5120){
+// 	 fileTag.addEventListener("change", function() {
+//   changeImage(this);
+// });
+
+// function changeImage(input) {
+//   var reader;
+
+//   if (input.files && input.files[0]) {
+//     reader = new FileReader();
+
+//     reader.onload = function(e) {
+//       preview.setAttribute('src', e.target.result);
+//     }
+
+//     reader.readAsDataURL(input.files[0]);
+//   }
+// }
+
+// 	}
+// 	alert("file size too large");
+// 	//return false;
+    
+
+// }
+
+// function image_size(){
+// const fi=document.getElementById("filetag");
+// if(fi.files.length>0){
+// 	alert("if");
+// 	const fsize=fi.files.item(0).size;
+// 	const file=Math.round((fsize/1024));
+// 	if(file<=5120){
+// 	 display_image();
+
+// 	}
+// 	alert("file size too large");
+// 	//return false;
+// }
+// }
+
+
+
+
+</script>
+</body>
+
+</html>
